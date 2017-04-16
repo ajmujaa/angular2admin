@@ -1,0 +1,297 @@
+
+
+/********** 3. HEADER STYLES **********/
+/**************************************/
+
+.headerwrapper {
+    background-color: #e42b38;
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerwrapper:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+
+/***** 3.1 HEADER LEFT *****/
+
+.headerwrapper .header-left {
+    width: 230px;
+    min-height: 60px;
+    padding: 14px 15px;
+    float: left;
+    border-right: 1px solid rgba(255,255,255,0.14);
+    background-color: rgba(0,0,0,0.03);
+    position: relative;
+}
+
+.headerwrapper .header-left .logo {
+    display: inline-block;
+    margin-top: 5px;
+    float: left;
+}
+
+.headerwrapper .header-left .menu-collapse {
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.8);
+    padding: 6px 9px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: normal;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.headerwrapper .header-left .menu-collapse:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+/***** 3.2 HEADER RIGHT *****/
+
+.headerwrapper .header-right {
+    margin-left: 230px;
+    min-height: 60px;
+    padding: 14px 15px;
+}
+
+.headerwrapper .header-right .btn-group {
+    margin: 0;
+    line-height: 21px;
+    float: left;
+}
+
+.headerwrapper .header-right .btn-group > .btn {
+    border: 0;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(255,255,255,0.75);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    line-height: normal;
+    margin-left: 5px;
+    height: 33px;
+}
+
+.headerwrapper .header-right .btn-group > .btn:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.headerwrapper .header-right .btn-group > .btn:focus,
+.headerwrapper .header-right .btn-group > .btn:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.headerwrapper .header-right .btn-group .btn .badge {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+    margin-left: 2px;
+    padding: 2px 6px;
+}
+
+.btn-group-notification > .btn {
+    padding: 7px 10px;
+}
+
+.btn-group-messages > .btn {
+    padding: 6px 9px 8px 9px;
+}
+
+.btn-group-option > .btn {
+    padding: 7px 12px;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu {
+    -moz-box-shadow: 3px 3px 0 rgba(0,0,0,0.05);
+    -webkit-box-shadow: 3px 3px 0 rgba(0,0,0,0.05);
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.05);
+    margin-top: 13px;
+    border-top: 0;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    border-color: #ccc;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu:after {
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid rgba(0,0,0,0);
+    border-right: 6px solid rgba(0,0,0,0);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu li {
+    position: relative;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu li a {
+    font-size: 12px;
+    padding: 8px 15px;
+    color: #555;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu li a:hover {
+    color: #333;
+    background-color: #E4E7EA;
+}
+
+.headerwrapper .header-right .btn-group .dropdown-menu .divider {
+    margin: 5px 0;
+}
+
+.headerwrapper .header-right .btn-group-option .dropdown-menu li .glyphicon,
+.headerwrapper .header-right .btn-group-option .dropdown-menu li .fa {
+    margin-right: 10px;
+}
+
+.headerwrapper .header-right .btn-group-option .dropdown-menu {
+    min-width: 180px;
+    margin-top: 13px;
+}
+
+.headerwrapper .header-right .form-search {
+    float: left;
+    margin-right: 10px;
+    margin-top: 0;
+    position: relative;
+}
+
+.headerwrapper .header-right .form-search:before {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    color: #666;
+}
+
+.headerwrapper .header-right .form-search .form-control {
+    border: 0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    width: 200px;
+    padding-left: 30px;
+    height: 32px;
+    font-size: 13px;
+}
+
+.headerwrapper .header-right .btn-group-list .dropdown-menu {
+    padding: 0;
+    min-width: 380px;
+}
+
+.headerwrapper .header-right .btn-group-list .dropdown-menu:after {
+    border-bottom-color: #E4E7EA;
+}
+
+.headerwrapper .header-right div.dropdown-menu h5 {
+    padding: 13px 0;
+    text-align: center;
+    background-color: #E4E7EA;
+    margin: 0;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerwrapper .header-right .dropdown-footer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.headerwrapper .header-right .link-right {
+    color: #636E7B;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.dropdown-list {
+    margin: 0;
+}
+
+.dropdown-list li {
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 10px 20px 10px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #fcfcfc;
+}
+
+.dropdown-list li:first-child {
+    border-top: 0;
+}
+
+.dropdown-list li .noti-thumb {
+    width: 40px;
+}
+
+.dropdown-list .media-body {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.dropdown-list .media-body strong {
+    font-weight: 500;
+    color: #2f363d;
+}
+
+.dropdown-list .media-body p {
+    margin: 0;
+}
+
+.dropdown-list .media-body .date {
+    display: block;
+    margin-top: 2px;
+    line-height: normal;
+    color: #999;
+}
+
+.dropdown-list .media-body .date i {
+    margin-right: 2px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+.dropdown-list .badge {
+    float: right;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 5px 8px;
+}
