@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BlankTemplateComponent } from './template/blank-template.component';
 import {AppRoutingModule} from './app.routing';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlankTemplateComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
