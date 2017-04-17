@@ -1,4 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
-.test{
-
+html {
+    position: relative;
+    min-height: 100%;
+    background: #eceeef;
+}
+body {
+    background: transparent;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    color: #686868;
+    font-weight: 300;
+}
+.sidebar {
+  z-index: 10;
+  position: absolute;
+  width: 220px;
+  padding-top: 60px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  box-shadow: 1px 5px 4px #ccc;
+}
+.fix-sidebar .sidebar {
+    position: fixed;
+    overflow: hidden
+}
+.fix-sidebar .top-left-part {
+    position: fixed;
+    width: 220px
+}
+.fix-sidebar .navbar-left {
+    margin-left: 220px
+}
+.input-group.custom-search-form {
+    margin: 30px 0;
+    padding: 0px 10px;
+}
+#side-menu {
+    display: block;
+    transition: .5 easy-out;
+}
+#page-wrapper {
+    position: inherit;
+    margin: 0 0 0 220px;
+}
+.container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.white-box {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 6px #ccc;
+}
+ul#side-menu a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ececec;
+    color: #1f6b9e;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #86c7f3;
+    border-color: #73b5e2;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1f6b9e;
+    border-color: #0f4163;
+}
+.btn {
+    border-radius: 0;
+    padding: 8px 20px;
+}
+ul#side-menu a.active {
+    background: #ff6384;
+    color: #fff;
+}
+ul#side-menu li.user-pro a {
+    color: #6f6f6f;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+ul#side-menu li.user-pro a small {
+    display: block;
+    font-size: 60%;
+    letter-spacing: normal;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BarChartComponent } from '../bar-chart/bar-chart.component';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    barChartComponent: BarChartComponent
+  ) { }
 
   ngOnInit() {
   }
