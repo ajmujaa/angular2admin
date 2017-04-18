@@ -14,7 +14,7 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     BlankTemplateComponent,
     PageNotFoundComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

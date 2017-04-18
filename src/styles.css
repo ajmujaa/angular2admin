@@ -86,7 +86,7 @@ ul#side-menu a.active {
 }
 ul#side-menu li.user-pro a {
     color: #6f6f6f;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: -1px;
@@ -95,4 +95,5 @@ ul#side-menu li.user-pro a small {
     display: block;
     font-size: 60%;
     letter-spacing: normal;
+    text-align: left;
 }
